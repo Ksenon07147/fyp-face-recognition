@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="870dp" />
+
+    <TextView
+        android:id="@+id/titleShake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:text="Shake Detect: "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultShake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/titleShake"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="90dp"
+        android:text="Pending "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/titleNod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleShake"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Nod Detect: "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultNod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultShake"
+        android:layout_toRightOf="@+id/titleShake"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="Pending "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/titleBlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleNod"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Blink Detect: "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultBlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultNod"
+        android:layout_toRightOf="@+id/titleShake"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="Pending "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/titleSmile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBlink"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Smile Detect: "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultSmile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultBlink"
+        android:layout_toRightOf="@+id/titleShake"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="Pending "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/titleMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleSmile"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Mouth Detect: "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultSmile"
+        android:layout_toRightOf="@+id/titleShake"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="Pending "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/titleIndentity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleMouth"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Identity Detected: "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultIdentity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultMouth"
+        android:layout_toRightOf="@+id/titleShake"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:text="Pending "
+        android:textSize="20dp"
+        android:textColor="#0000FF"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/titleShake"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="500dp"
+        android:text="Reset" />
+
+
+</RelativeLayout>
